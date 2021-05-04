@@ -70,9 +70,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 125px auto 200px auto;
   border-radius: 30px;
   height: 350px;
   width: 18%;
 }
 
+.middle-container-item img{
+  height: 150px;
+  width: 150px;
+}
