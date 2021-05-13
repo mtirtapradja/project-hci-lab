@@ -81,11 +81,38 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #000000;
+}
+
+.company-profile {
+  height: 70%;
+  width: 70%;
+  align-items: center;
+}
+
+.company-profile h3 {
+  padding-top: 10%;
+  padding-bottom: 2%;
+}
+
+.company-profile h2 {
+  color: rgb(121, 121, 121);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.circle {
+  justify-content: center;
+  align-items: center;
+  height: 15em;
+  width: 15em;
+  border-radius: 180px;
+  background-color: #000000;
 }
 
 .middle-container-item {
   text-decoration: none;
-  background-color: #c4c4c4;
+  background-color: #c4c4c4c4;
   display: flex;
   flex-direction: column;
   justify-content: center;
