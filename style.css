@@ -4,13 +4,13 @@
   padding: 0;
 }
 
-.logo{
+.logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.logo img{
+.logo img {
   height: 100px;
   width: 200px;
 }
@@ -72,6 +72,11 @@ body {
   height: 601px;
   width: 90%;
 }
+
+.middle-container h3 {
+  font-size: 3rem;
+}
+
 .middle-container-items {
   display: flex;
   flex-direction: row;
@@ -91,7 +96,7 @@ body {
   width: 18%;
 }
 
-.middle-container-item img{
+.middle-container-item img {
   height: 130px;
   width: 150px;
 }
