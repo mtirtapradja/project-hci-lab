@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 1em;
 }
 
 .logo img {
@@ -20,7 +21,7 @@ body {
   background-color: #fff;
 }
 
-header{
+header {
   height: 5%;
 }
 
@@ -72,7 +73,7 @@ header{
   background-color: #f1f1f1;
   display: flex;
   flex-direction: column;
-  margin:5%;
+  margin: 5%;
   padding: 1%;
   border-radius: 30px;
   height: 50%;
@@ -87,8 +88,6 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-<<<<<<< HEAD
-  background-color: #000000;
 }
 
 .company-profile {
@@ -115,16 +114,14 @@ header{
   width: 15em;
   border-radius: 180px;
   background-color: #000000;
-=======
   align-items: center;
 }
 
-.middle-container-witharrow{
+.middle-container-witharrow {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
->>>>>>> 725ff4006a7ee5ce9613db197f73fe15709cdb53
 }
 
 .middle-container-item {
@@ -142,7 +139,7 @@ header{
   width: 18%;
 }
 
-.middle-container-item div{
+.middle-container-item div {
   display: flex;
   margin-top: 10px;
   flex-direction: column;
@@ -151,15 +148,14 @@ header{
   font-weight: bold;
 }
 
-s{
+s {
   color: red;
 }
 
-#arrow{
+#arrow {
   height: 50px;
   width: 50px;
 }
-
 
 .middle-container-item img {
   height: 50%;
