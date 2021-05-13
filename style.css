@@ -109,7 +109,7 @@ body {
   margin: 50px auto 0px auto;
   border-radius: 30px;
   height: 601px;
-  width: 90%;
+  width: 75%;
 }
 
 .map {
@@ -123,5 +123,12 @@ body {
  width: 33em;
  outline-style: solid;
  outline-color: #61616b;
+ margin-right: 25px;
+}
 
+.map-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25px;
 }
