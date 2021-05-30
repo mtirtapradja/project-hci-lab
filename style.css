@@ -85,6 +85,10 @@ header {
 }
 
 .middle-container-items {
+  display: none;
+}
+
+.middle-container-items-active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -152,9 +156,20 @@ s {
   color: red;
 }
 
-#arrow {
+#arrowleft {
   height: 50px;
   width: 50px;
+  cursor: pointer;
+  z-index: 100;
+  margin-right: -45;
+}
+
+#arrowright{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  z-index: 100;
+  margin-left: -45;
 }
 
 .middle-container-item img {
