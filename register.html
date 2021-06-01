@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="register-style.css">
+    
 </head>
 <body>
     <header>
@@ -53,7 +54,7 @@
                 <h3>Create Account</h3>
             </div>
             <div class="mid-items">
-                <div class="mid-fill-item">
+                <!-- <div class="mid-fill-item">
                     <form action="google.com" method="GET">
                         <br>
                         Name 
@@ -74,18 +75,66 @@
                         <br>
                         <input type="checkbox" name="tos" id="">
                     </form>
-                </div>
-                <div class="logo circle"><img src="Assets/logo.png" alt="" /></div>
+                </div> -->
+                <form action="#" method="GET" name="form">
+                  <table>
+                    <tr>
+                      <td>Nama</td>
+                      <td>
+                        <input type="text" name="nama-pengguna" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Email</td>
+                      <td>
+                        <input type="email" name="email-pengguna" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Password</td>
+                      <td>
+                        <input type="password" name="password-pengguna" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Gender</td>
+                      <td>
+                        <input type="radio" name="gender" value="male" />
+                        Male
+                        
+                        <input type="radio" name="gender" value="female" />
+                        Female
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Address</td>
+                      <td>
+                        <input type="text" name="alamat-pengguna" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>City</td>
+                      <td>
+                        <input type="text" name="kota-pengguna" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Agreement</td>
+                      <td>
+                        <input type="checkbox" name="tos" />
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+                <div class="logo circle"><img src="Assets/Public-Assets/logo.png" alt=""   /></div>
             </div>
             <div class="bot-items">
                 <div>
-                    check box
-                </div>
-                <div>
-                    sign up button
+                    <input type="button" value="Sign Up" onclick="validateEmail()">
                 </div>
             </div>
         </div>
     </section>
+    <script src="registerScript.js"></script>
 </body>
 </html>
