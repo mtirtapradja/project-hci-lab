@@ -1,5 +1,15 @@
+var url;
+
+$(document).ready(function(){
+  $('.image').click(function(){
+    $('#showImage').fadeOut(1000,function(){
+      $(this).attr("src",url).fadeIn(1000);
+    });
+  });
+});
+
 function setImage(path){
-    document.getElementById('showImage').src = path;
+  url = path;
 }
 
 $(document).ready(function () {
