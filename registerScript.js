@@ -1,5 +1,3 @@
-
-
 function validateEmail(emailText){
     var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
     if (emailText.value.match(mailformat)){
