@@ -1,19 +1,29 @@
-function validateRegistration(){
-    var nameText = document.getElementById("nama-pengguna").value;
-    var emailText = document.getElementById("email-pengguna").value;
-    var passwordText = document.getElementById("password-pengguna").value;
-    var genderText = document.getElementById("gender").value;
-    var addressText = document.getElementById("alamat-pengguna").value;
-    var cityText = document.getElementById("kota-pengguna").value;
-    var tosText = document.getElementById("tos").value;
+// var nameText;
+// var emailText;
+// var passwordText;
+// var genderText;
+// var addressText;
+// var cityText;
+// var tosText;
 
-    if (nameText == null){
+    var nameText = document.getElementById("nama-pengguna");
+    var emailText = document.getElementById("email-pengguna");
+    var passwordText = document.getElementById("password-pengguna");
+    var genderText = document.getElementById("gender");
+    var addressText = document.getElementById("alamat-pengguna");
+    var cityText = document.getElementById("kota-pengguna");
+    var tosText = document.getElementById("tos");
+
+
+function validateRegistration(){
+    
+    if (nameText.value == null){
         alert("Please Insert Your Name!");
-    }else if (namaText < 3){
+    }else if (namaText.length < 3){
         alert("Name must be at least 3 characters!");
-    }else if (textEmail == null){
+    }else if (emailText == null){
         alert("Please Insert Your Email Address!");
-    }else if (validateEmail(textEmail)){
+    }else if (validateEmail(emailText)){
         alert("Invalid Email Format!");
     }else if (passwordText == null){
         alert("Please Insert Your Password!");
@@ -26,7 +36,6 @@ function validateRegistration(){
     }else if (tosText == null){
         alert("Please Check the ToS Box!");
     }
-
 }
 
 function validateEmail(textEmail){
