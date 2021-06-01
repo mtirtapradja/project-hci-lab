@@ -54,18 +54,19 @@
                 <h3>Create Account</h3>
             </div>
             <div class="mid-items">
-                <form action="#" name="formsss">
+              
+                <form action="https//www.google.com?" name="formName">
                   <table>
                     <tr>
                       <td>Nama</td>
                       <td>
-                        <input type="text" name="nama-pengguna" />
+                        <input type="text" id="nama-pengguna" value=""/>
                       </td>
                     </tr>
                     <tr>
                       <td>Email</td>
                       <td>
-                        <input type="email" name="email-pengguna" />
+                        <input type="email" id="email-pengguna" value="" />
                       </td>
                     </tr>
                     <tr>
@@ -77,42 +78,41 @@
                     <tr>
                       <td>Gender</td>
                       <td>
-                        <input type="radio" name="gender" value="male" />
-                        Male
-                        
-                        <input type="radio" name="gender" value="female" />
+                        <input type="radio" id="gender" value="male" />
+                        Male 
+                        <input type="radio" id="gender" value="female" />
                         Female
                       </td>
                     </tr>
                     <tr>
                       <td>Address</td>
                       <td>
-                        <input type="text" name="alamat-pengguna" />
+                        <input type="text" id="alamat-pengguna" />
                       </td>
                     </tr>
                     <tr>
                       <td>City</td>
                       <td>
-                        <input type="text" name="kota-pengguna" />
+                        <input type="text" id="kota-pengguna" />
                       </td>
                     </tr>
                     <tr>
                       <td>Agreement</td>
                       <td>
-                        <input type="checkbox" name="tos" value="" onclick="vali"/>
+                        <input type="checkbox" id="tos" value="tos" />
                       </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="button" value="Sign Up" onclick="validateRegistration()">
+                      </td>
+                      <script src="registerScript.js"></script>
                     </tr>
                   </table>
                 </form>
-                <div class="logo circle"><img src="Assets/Public-Assets/logo.png" alt=""   /></div>
-                <script src="registerScript.js"></script>
+                <div class="logo circle" ><img src="Assets/Public-Assets/logo.png" alt=""/></div>
+              </div>
             </div>
-            <div class="bot-items">
-                <div>
-                    <input type="button" value="Sign Up">
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
+          </section>
+        </body>
 </html>
