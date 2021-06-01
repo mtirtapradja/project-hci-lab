@@ -23,3 +23,7 @@ $(document).ready(function () {
     }
   });
 });
+
+function movePage(path){
+  window.location.href = path;
+}
