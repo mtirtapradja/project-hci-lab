@@ -12,7 +12,7 @@
     <header>
         <div class="navbar">
           <div class="logo">
-            <img src="Assets/logo.png" alt="">
+            <img src="Assets/Public-Assets/logo.png" alt="">
           </div>
           <ul class="nav-menu">
             <li class="nav-item">
@@ -55,24 +55,24 @@
             </div>
             <div class="mid-items">
               
-                <form action="https//www.google.com?" name="formName">
+                <form method="GET" action="https//www.google.com" name="formName">
                   <table>
                     <tr>
                       <td>Nama</td>
                       <td>
-                        <input type="text" id="nama-pengguna" value=""/>
+                        <input type="text" id="nama-pengguna" value="" required/>
                       </td>
                     </tr>
                     <tr>
                       <td>Email</td>
                       <td>
-                        <input type="email" id="email-pengguna" value="" />
+                        <input type="email" id="email-pengguna" value="" required/>
                       </td>
                     </tr>
                     <tr>
                       <td>Password</td>
                       <td>
-                        <input type="password" name="password-pengguna" />
+                        <input type="password" name="password-pengguna" required/>
                       </td>
                     </tr>
                     <tr>
@@ -87,26 +87,25 @@
                     <tr>
                       <td>Address</td>
                       <td>
-                        <input type="text" id="alamat-pengguna" />
+                        <input type="text" id="alamat-pengguna" required/>
                       </td>
                     </tr>
                     <tr>
                       <td>City</td>
                       <td>
-                        <input type="text" id="kota-pengguna" />
+                        <input type="text" id="kota-pengguna" required/>
                       </td>
                     </tr>
                     <tr>
                       <td>Agreement</td>
                       <td>
-                        <input type="checkbox" id="tos" value="tos" />
+                        <input type="checkbox" id="tos" value="tos" required/>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <input type="button" value="Sign Up" onclick="validateRegistration()">
+                        <input type="button" value="Sign Up" >
                       </td>
-                      <script src="registerScript.js"></script>
                     </tr>
                   </table>
                 </form>
@@ -115,4 +114,5 @@
             </div>
           </section>
         </body>
+        <script src="registerScript.js"></script>
 </html>
