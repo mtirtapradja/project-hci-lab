@@ -79,9 +79,9 @@
             <tr>
               <td>Gender</td>
               <td>
-                <input type="radio" id="gender" value="male" />
+                <input type="radio" name="gender" id="male" value="Male" onchange="valueChanged()"/>
                 Male
-                <input type="radio" id="gender" value="female" />
+                <input type="radio" name="gender" id="female" value="Female" onchange="valueChanged()"/>
                 Female
               </td>
             </tr>
@@ -98,22 +98,24 @@
               </td>
             </tr>
             <tr>
-              <td>Agreement</td>
+              <td>Term of Service</td>
               <td>
                 <input type="checkbox" id="tos" />
               </td>
             </tr>
             <tr>
               <td>
-                <input type="button" value="Sign Up" onclick="validateRegistration()">
+                <span  id="errorLabel" style="color: red;"></span>
               </td>
             </tr>
+            
           </table>
         </form>
         <div class="logo circle"><img src="../Assets/Public-Assets/logo.png" alt="" /></div>
       </div>
       <div class="bot-items">
-
+        
+        <input class="button" type="button" value="Sign Up" onclick="validateRegistration()">
       </div>
     </div>
   </section>

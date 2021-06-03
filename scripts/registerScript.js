@@ -13,7 +13,7 @@ function validateRegistration() {
   console.log(emailText);
   passwordText = document.getElementById("password-pengguna").value;
   console.log(passwordText);
-  genderText = document.getElementById("gender").value;
+  genderText = document.querySelector('input[name="gender"]').value;
   console.log(genderText);
   addressText = document.getElementById("alamat-pengguna").value;
   console.log(addressText);
@@ -43,21 +43,63 @@ function validateRegistration() {
   }
 }
 
+function validateEmail(emailText){
+  if (emailText.length < 3){
+    return false;
+  }
+
+  if (email.indexOf("@") < 0){
+    return false;
+  }
+
+  var bagian = emailText.split("@");
+  var titik = bagian[1].indexOf(".");
+  var titikSplit = bagian[1].split(".");
+  var titikCount = titikSplit.length - 1;
+
+  if (titik < 2 || titikCount > 2){
+    return false;
+  }
+
+  for(var n = 0; n < titikSplit.length; n++){
+    if (titikSplit[n].length == 0){
+      return false;
+    }
+  }
+
+  return true;
+}
+
 function validateEmail(textEmail) {
-  if (textEmail.indexOf("@") < 1) {
-    console.log("1");
+  if (textEmail.indexOf("@") <= 0 || textEmail.indexOf("@") <= textEmail.length - 1) {
     return false;
   }
 
-  if (textEmail.indexOf(".") == 0) {
-    console.log("2");
+  if (textEmail.indexOf(".") <= 0 || textEmail.indexOf("@") <= textEmail.length - 1) {
     return false;
   }
 
-  if (textEmail.indexOf(".")) {
-    console.log("3");
+  var jmlAt = 0;
+  for (i = 0; i < textEmail.length; i++){
+    if (textEmail[i] == "@"){
+      jml++;
+    }
+  }
+
+  if (jmlAt > 1) {
     return false;
   }
 
   return true;
+}
+
+function valueChanged(){
+  if(document.getElementById("male").checked == true)
+  {
+      document.getElementById("female").checked = false;
+  }
+  else
+  {
+      document.getElementById("male").checked = false;
+  }
 }
