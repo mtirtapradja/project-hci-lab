@@ -10,8 +10,8 @@ function setImage(path) {
   url = path;
 }
 
-function movePage(path) {
-  window.location.href(path);
+function movePage(path){
+  window.location.href = path;
 }
 
 $(document).ready(function () {
