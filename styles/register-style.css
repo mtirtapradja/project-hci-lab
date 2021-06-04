@@ -54,19 +54,19 @@
   input[type=text] {
     width: 150%;
     padding: 5px 10px;
-    margin: 2px 0;
+    margin: 5px 0;
     box-sizing: border-box;
   }
   input[type=password]{
     width: 150%;
     padding: 5px 10px;
-    margin: 2px 0;
+    margin: 5px 0;
     box-sizing: border-box;
   }
   input[type=email]{
     width: 150%;
     padding: 5px 10px;
-    margin: 2px 0;
+    margin: 5px 0;
     box-sizing: border-box;
   }
   input[type=radio]{
