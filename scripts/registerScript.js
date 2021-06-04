@@ -2,6 +2,7 @@ var nameText;
 var emailText;
 var passwordText;
 var genderText;
+var genderTextF;
 var addressText;
 var cityText;
 var tosText;
@@ -13,46 +14,59 @@ function validateRegistration() {
   console.log(emailText);
   passwordText = document.getElementById("password-pengguna").value;
   console.log(passwordText);
-  genderText = document.querySelector('input[name="gender"]').value;
+  genderText = document.querySelector('input[name="gender"]');
+  genderTextF = document.querySelector('input[name="genderF"]');
   console.log(genderText);
   addressText = document.getElementById("alamat-pengguna").value;
   console.log(addressText);
   cityText = document.getElementById("kota-pengguna").value;
   console.log(cityText);
-  tosText = document.getElementById("tos").value;
+  tosText = document.getElementById("tos");
   console.log(tosText);
+  var errorLabel = document.getElementById("errorLabel");
 
   if (nameText == "") {
-    alert("Please Insert Your Name!");
+    errorLabel.innerHTML = "Please Insert Your Name!";
+    // alert("Please Insert Your Name!");
   } else if (nameText.length < 3) {
-    alert("Name must be at least 3 characters!");
+    errorLabel.innerHTML = "Name must be at least 3 characters!";
+    // alert("Name must be at least 3 characters!");
   } else if (emailText == "") {
-    alert("Please Insert Your Email Address!");
+    errorLabel.innerHTML = "Please Insert Your Email Address!";
+    // alert("Please Insert Your Email Address!");
   } else if (!validateEmail(emailText)) {
-    alert("Invalid Email Format!");
+    errorLabel.innerHTML = "Invalid Email Format!";
+    // alert("Invalid Email Format!");
   } else if (passwordText == "") {
-    alert("Please Insert Your Password!");
-  } else if (genderText == "") {
-    alert("Please Choose Your Gender!");
+    errorLabel.innerHTML = "Please Insert Your Password!";
+    // alert("Please Insert Your Password!");
+  } else if (!genderText.checked && !genderTextF.checked) {
+    errorLabel.innerHTML = "Please Choose Your Gender!";
+    // alert("Please Choose Your Gender!");
   } else if (addressText == "") {
-    alert("Please Fill You Address!");
+    errorLabel.innerHTML = "Please Fill You Address!";
+    // alert("Please Fill You Address!");
   } else if (cityText == "") {
-    alert("Please Fill Your City Location!");
-  } else if (tosText == "") {
-    alert("Please Check the ToS Box!");
+    errorLabel.innerHTML = "Please Fill Your City Location!";
+    // alert("Please Fill Your City Location!");
+  } else if (!tosText.checked) {
+    errorLabel.innerHTML = "Please Check the ToS Box!";
+    // alert("Please Check the ToS Box!");
+  }else{
+    errorLabel.innerHTML = "";
   }
 }
 
-function validateEmail(emailText){
-  if (emailText.length < 3){
+function validateEmail(textEmail){
+  if (textEmail.length < 3){
     return false;
   }
 
-  if (email.indexOf("@") < 0){
+  if (textEmail.indexOf("@") < 0){
     return false;
   }
 
-  var bagian = emailText.split("@");
+  var bagian = textEmail.split("@");
   var titik = bagian[1].indexOf(".");
   var titikSplit = bagian[1].split(".");
   var titikCount = titikSplit.length - 1;
@@ -70,28 +84,28 @@ function validateEmail(emailText){
   return true;
 }
 
-function validateEmail(textEmail) {
-  if (textEmail.indexOf("@") <= 0 || textEmail.indexOf("@") <= textEmail.length - 1) {
-    return false;
-  }
+// function validateEmail(textEmail) {
+//   if (textEmail.indexOf("@") <= 0 || textEmail.indexOf("@") <= textEmail.length - 1) {
+//     return false;
+//   }
 
-  if (textEmail.indexOf(".") <= 0 || textEmail.indexOf("@") <= textEmail.length - 1) {
-    return false;
-  }
+//   if (textEmail.indexOf(".") <= 0 || textEmail.indexOf("@") <= textEmail.length - 1) {
+//     return false;
+//   }
 
-  var jmlAt = 0;
-  for (i = 0; i < textEmail.length; i++){
-    if (textEmail[i] == "@"){
-      jml++;
-    }
-  }
+//   var jmlAt = 0;
+//   for (i = 0; i < textEmail.length; i++){
+//     if (textEmail[i] == "@"){
+//       jml++;
+//     }
+//   }
 
-  if (jmlAt > 1) {
-    return false;
-  }
+//   if (jmlAt > 1) {
+//     return false;
+//   }
 
-  return true;
-}
+//   return true;
+// }
 
 function valueChanged(){
   if(document.getElementById("male").checked == true)

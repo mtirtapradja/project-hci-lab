@@ -36,29 +36,35 @@
     align-items: center;
     background-color: #000000;
     border-radius: 180px;
-    height: 15em;
+    height: 17em;
     justify-content: center;
-    width: 15em;
+    width: 17em;
   }
-
+  .errlbl{
+    padding: 20px 25px;
+  }
   form{
     margin-right: 150px;
   }
 
+  h3{
+    padding: 5px 20px;
+  }
+
   input[type=text] {
-    width: 100%;
+    width: 150%;
     padding: 5px 10px;
     margin: 2px 0;
     box-sizing: border-box;
   }
   input[type=password]{
-    width: 100%;
+    width: 150%;
     padding: 5px 10px;
     margin: 2px 0;
     box-sizing: border-box;
   }
   input[type=email]{
-    width: 100%;
+    width: 150%;
     padding: 5px 10px;
     margin: 2px 0;
     box-sizing: border-box;

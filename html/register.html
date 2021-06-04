@@ -56,61 +56,62 @@
         <h1>Create Account</h1>
       </div>
       <div class="mid-items">
-        <form method="GET" action="https//www.google.com" id="formId">
-          <table>
-            <tr>
-              <td>Nama</td>
-              <td>
-                <input type="text" id="nama-pengguna" />
-              </td>
-            </tr>
-            <tr>
-              <td>Email</td>
-              <td>
-                <input type="email" id="email-pengguna" />
-              </td>
-            </tr>
-            <tr>
-              <td>Password</td>
-              <td>
-                <input type="password" id="password-pengguna" />
-              </td>
-            </tr>
-            <tr>
-              <td>Gender</td>
-              <td>
-                <input type="radio" name="gender" id="male" value="Male" onchange="valueChanged()"/>
-                Male
-                <input type="radio" name="gender" id="female" value="Female" onchange="valueChanged()"/>
-                Female
-              </td>
-            </tr>
-            <tr>
-              <td>Address</td>
-              <td>
-                <input type="text" id="alamat-pengguna" />
-              </td>
-            </tr>
-            <tr>
-              <td>City</td>
-              <td>
-                <input type="text" id="kota-pengguna" />
-              </td>
-            </tr>
-            <tr>
-              <td>Term of Service</td>
-              <td>
-                <input type="checkbox" id="tos" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span  id="errorLabel" style="color: red;"></span>
-              </td>
-            </tr>
-            
-          </table>
-        </form>
+        <div>
+          <div>
+            <form method="GET" action="https//www.google.com" id="formId">
+              <table>
+                <tr>
+                  <td><h3>Nama</h3></td>
+                  <td>
+                    <input type="text" id="nama-pengguna" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><h3>Email</h3></td>
+                  <td>
+                    <input type="email" id="email-pengguna" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><h3>Password</h3></td>
+                  <td>
+                    <input type="password" id="password-pengguna" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><h3>Gender</h3></td>
+                  <td>
+                    <input type="radio" name="gender" id="male" value="Male" onchange="valueChanged()"/>
+                    Male
+                    <input type="radio" name="genderF" id="female" value="Female" onchange="valueChanged()"/>
+                    Female
+                  </td>
+                </tr>
+                <tr>
+                  <td><h3>Address</h3></td>
+                  <td>
+                    <input type="text" id="alamat-pengguna" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><h3>City</h3></td>
+                  <td>
+                    <input type="text" id="kota-pengguna" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><h3>Term of Service</h3></td>
+                  <td>
+                    <input type="checkbox" id="tos" />
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          <div class="errlbl">
+            <span  id="errorLabel" style="color: red;"></span>
+          </div>
+        </div>
         <div class="logo circle"><img src="../Assets/Public-Assets/logo.png" alt="" /></div>
       </div>
       <div class="bot-items">
