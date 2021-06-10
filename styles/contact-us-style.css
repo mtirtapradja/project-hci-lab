@@ -61,6 +61,13 @@ body {
  outline-color: #61616b;
  margin-right: 50px;
 }
+.map-size img{
+  height: 31em;
+  width: 31em;
+  outline-style: solid;
+  outline-color: #61616b;
+  margin-right: 50px;
+ }
 
 .map-description {
   display: flex;
