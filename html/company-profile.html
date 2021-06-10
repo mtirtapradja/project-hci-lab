@@ -7,48 +7,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../styles/company-profile.css">
   <title>Company Profile</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="../scripts/scriptForNavbar.js"></script>
 </head>
 
 <body>
-  <header>
+  <nav>
     <div class="navbar">
       <div class="logo">
         <img src="../Assets/Public-Assets/logo.png" alt="" />
       </div>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="index.html" class="nav-links">
-            <!-- <img src="./Assets/Home.png" /> -->
-            Home
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-links">
-            <!-- <img src="./Assets/Cart.png" /> -->
-            Product
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-links">
-            <!-- <img src="./Assets/contact us.png" /> -->
-            Company Profile
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-links">
-            <!-- <img src="./Assets/People.png" /> -->
-            Contact Us
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-links">
-            <!-- <img src="./Assets/Home.png" /> -->
-            Registration
-          </a>
-        </li>
-      </ul>
+      <div class="navigation">
+        <img id="burgermenu" src="../Assets/Public-Assets/Hamburger_icon.svg.png">
+        <ul>
+          <li>
+            <a href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Product
+            </a>
+          </li>
+          <li>
+            <a href="company-profile.html">
+              Company Profile
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Contact Us
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Registration
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <section>
     <div class="middle-container company-profile">
@@ -64,17 +65,17 @@
         <div class="middle-container-item">
           <img src="../Assets/Company-Profile-Assets/MT Img.jpg" alt="Marcellino Profile" />
           <p>Marcellino</p>
-          Chief Executive Officer
+          <span>Chief Executive Officer</span>
         </div>
         <div class="middle-container-item">
           <img src="../Assets/Company-Profile-Assets/Kevin Img.jpg" alt="Kevin Profile" />
           <p>Kevin Tanuwijaya</p>
-          Chief Technology Officer
+          <span>Chief Technology Officer</span>
         </div>
         <div class="middle-container-item">
           <img src="../Assets/Company-Profile-Assets/SS Img.jpg" alt="Steven Profile" />
           <p>Steven Santoso Suntiarko</p>
-          Chief Management Officer
+          <span>Chief Management Officer</span>
         </div>
       </div>
     </div>
