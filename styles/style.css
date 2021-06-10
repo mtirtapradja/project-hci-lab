@@ -142,10 +142,19 @@ header {
   justify-content: space-between;
 }
 
+.arrow{
+  display: flex;
+  flex-direction: column;
+}
+
 .middle-container-item {
   background-color: #c4c4c4c4;
   border-radius: 30px;
-  display: none;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
   height: 23em;
   justify-content: center;
   margin: 2em auto 2em auto;
@@ -153,13 +162,6 @@ header {
   padding-right: 1em;
   text-decoration: none;
   width: 20%;
-}
-
-.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
 }
 
 .activee {
@@ -181,7 +183,8 @@ s {
   color: red;
 }
 
-#arrowleft {
+#arrowleft1,#arrowleft2,#arrowleft3,#arrowleft4 {
+  display: none;
   cursor: pointer;
   height: 50px;
   margin-right: -45;
@@ -189,7 +192,8 @@ s {
   z-index: 100;
 }
 
-#arrowright {
+#arrowright1,#arrowright2,#arrowright3,#arrowright4 {
+  display: none;
   cursor: pointer;
   height: 50px;
   margin-left: -45;
@@ -209,7 +213,35 @@ s {
   text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 2000px) {
+
+  #arrowleft1,#arrowright1{
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+  #arrowleft2,#arrowright2{
+    display: flex;
+  }
+
+  #arrowleft1,#arrowright1{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  #arrowleft3,#arrowright3{
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
   
   /* buat gambar yang di hover */
   #burgermenu{
@@ -217,6 +249,10 @@ s {
     
   }
 
+  #arrowleft4,#arrowright4{
+    display: flex;
+  }
+  
   /* buat menunya jadi kebawah */
   .nav-menu{
     display: none;
