@@ -126,10 +126,36 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 50px auto 0px auto;
+      margin-bottom: 50px;
       border-radius: 30px;
-      height: 601px;
+      height: 701px;
       width: 75%;
+      padding-bottom: 2rem;
     }
+    .map-size img{
+      height: 31em;
+      width: 31em;
+      outline-style: solid;
+      outline-color: #61616b;
+     }
+     .map-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 0rem;
+    }
+    .map-description p{
+      text-align: center;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    .map-size img{
+      height: 31em;
+      width: 31em;
+      outline-style: solid;
+      outline-color: #61616b;
+      margin-right: 0px;
+     }
   }
   
