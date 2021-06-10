@@ -61,6 +61,13 @@ body {
  outline-color: #61616b;
  margin-right: 50px;
 }
+.map-size img{
+  height: 31em;
+  width: 31em;
+  outline-style: solid;
+  outline-color: #61616b;
+  margin-right: 50px;
+ }
 
 .map-description {
   display: flex;
@@ -118,5 +125,44 @@ body {
   .nav-item:hover {
     border-bottom: 4px solid #33ffd3;
     transition: all 0.2s ease-out;
+  }
+
+  @media only screen and (max-width: 1000px){
+    .middle-container-contact-us {
+      background-color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      border-radius: 30px;
+      height: 701px;
+      width: 75%;
+      padding-bottom: 2rem;
+    }
+    .map-size img{
+      height: 31em;
+      width: 31em;
+      outline-style: solid;
+      outline-color: #61616b;
+     }
+     .map-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 0rem;
+    }
+    .map-description p{
+      text-align: center;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    .map-size img{
+      height: 31em;
+      width: 31em;
+      outline-style: solid;
+      outline-color: #61616b;
+      margin-right: 0px;
+     }
   }
   
