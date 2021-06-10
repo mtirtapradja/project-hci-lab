@@ -11,7 +11,7 @@
   }
   .button {
     
-    width: 35%;
+    width: 25rem;
     padding: 15px 25px;
     font-size: 24px;
     text-align: center;
@@ -41,7 +41,7 @@
     width: 17em;
   }
   .errlbl{
-    padding: 20px 25px;
+    padding: 0px 25px;
   }
   form{
     margin-right: 150px;
@@ -87,6 +87,17 @@
   }
   
   .logo img {
+    height: 100px;
+    width: 200px;
+  }
+
+  .logo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .logo2 img {
     height: 100px;
     width: 200px;
   }
@@ -165,5 +176,80 @@
   .top-items{
     display: flex;
     justify-content: center;
+  }
+
+  @media only screen and (max-width: 1000px){
+    .mid-items{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-top: 0rem;
+    }
+    .middle-container {
+      background-color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 50px auto 150px auto;
+      border-radius: 30px;
+      height: 900px;
+      width: 90%;
+    }
+    form{
+      margin-right: 300px;
+      padding-top: 3rem;
+    }
+    input[type=text] {
+      width: 225%;
+      padding: 5px 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    input[type=password]{
+      width: 225%;
+      padding: 5px 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    input[type=email]{
+      width: 225%;
+      padding: 5px 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    input[type=radio]{
+      padding: 5px 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    input[type=checkbox]{
+      padding: 5px 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    .logo2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .logo2 img {
+      height: 175px;
+      width: 350px;
+    }
+    /* .circle {
+      align-items: center;
+      background-color: #000000;
+      border-radius: 50px;
+      height: 17em;
+      justify-content: center;
+      width: 27em;
+    } */
+    .circle{
+      background-color: black;
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+  }
+
   }
   
