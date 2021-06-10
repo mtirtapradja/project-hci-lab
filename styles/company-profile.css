@@ -157,8 +157,8 @@ li:hover {
 }
 
 .middle-container-item img {
-  height: 60%;
-  width: 70%;
+  height: 70%;
+  width: 80%;
 }
 
 .middle-container-item p {
@@ -172,29 +172,30 @@ li:hover {
   text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1300px) {
+  .middle-container-item p {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .middle-container-item span {
+    font-size: 0.9em;
+    /* font-weight: bold; */
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .middle-container-items {
     flex-direction: column;
   }
 
   .middle-container-item {
     margin: 3.90625em 1em 6.25em 1em;
-    padding-left: 1em;
+    padding-left: 0.5em;
     padding-right: 1em;
     text-decoration: none;
     width: 50%;
-  }
-
-  .middle-container-item p {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .middle-container-item span {
-    font-size: 0.9em;
-    font-weight: bold;
-    text-align: center;
   }
 
   #burgermenu {
