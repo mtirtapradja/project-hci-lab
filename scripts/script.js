@@ -10,15 +10,12 @@ $(document).ready(function(){
   let width = $(window).width();
   
   if(width<800){
-    fields.css('height','13em');
     targetIndex = 1;
   }else
   if(width<1000){
-    fields.css('height','17em');
     targetIndex = 2;
   }else
   if(width<1500){
-    fields.css('height','20em');
     targetIndex = 3;
   }
 
