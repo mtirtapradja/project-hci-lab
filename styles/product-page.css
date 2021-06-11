@@ -1,12 +1,92 @@
 * {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6.25em;
+}
+
+.logo img {
+  height: 5em;
+  width: 10em;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
+header {
+  height: 5%;
+}
+
+.navbar {
+  align-content: center;
+  background-color: #61616b;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.navigation {
+  padding-top: 1em;
+}
+
+#burgermenu {
+  display: none;
+  float: right;
+  height: 30px;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  margin-right: 3em;
+}
+
+ul {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, auto);
+  justify-content: end;
+  list-style: none;
+  margin-right: 2rem;
+  text-align: center;
+  height: 40px;
+}
+
+li {
+  align-content: center;
+  height: 100%;
+}
+
+li a {
+  font-size: 100%;
+}
+
+a {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+li:hover {
+  border-bottom: 4px solid #33ffd3;
+  transition: all 0.2s ease-out;
+}
+
 .grid-container {
   display: inline-grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
   grid-gap: 1em 1em;
   padding: 1em;
 }
@@ -26,8 +106,8 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  min-height: 23em;
   justify-content: center;
+  min-height: 23em;
   padding-left: 1em;
   padding-right: 1em;
   text-align: center;
@@ -35,9 +115,9 @@
 }
 
 .middle-container-item div {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-weight: bold;
   margin-top: 10px;
   size: 1rem;
@@ -57,4 +137,68 @@
 
 s {
   color: red;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1em 1em;
+    padding: 1em;
+  }
+
+  #burgermenu {
+    display: block;
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  ul li a {
+    font-size: 20px;
+    justify-content: center;
+  }
+
+  li {
+    height: 5em;
+    margin-top: 1em;
+    justify-content: center;
+    width: 60%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .grid-container {
+      display: inline-grid;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(1, auto);
+      grid-gap: 1em 1em;
+      padding: 1em;
+    }
+  }
+
+  @media (hover: hover) {
+    li:hover {
+      background: #33ffd3;
+      border-radius: 180px;
+      transition: all 0.5s ease-in-out;
+    }
+
+    a:hover {
+      color: #000000;
+      font-weight: bold;
+      transition: all 0.1s ease-in;
+    }
+  }
 }

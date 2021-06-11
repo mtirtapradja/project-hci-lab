@@ -10,7 +10,7 @@
   <title>Document</title>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-    <script src="../scripts/scriptForNavbar.js"></script>
+  <script src="../scripts/scriptForNavbar.js"></script>
 </head>
 
 <body>
@@ -51,6 +51,7 @@
       </div>
     </div>
   </nav>
+
   <section>
     <div class="middle-container">
       <div class="top-items">
@@ -62,46 +63,60 @@
             <form method="GET" action="../html/index.html" id="formId">
               <table>
                 <tr>
-                  <td><h3>Nama</h3></td>
+                  <td>
+                    <h3>Nama</h3>
+                  </td>
                   <td>
                     <input type="text" id="nama-pengguna" />
                   </td>
                 </tr>
                 <tr>
-                  <td><h3>Email</h3></td>
+                  <td>
+                    <h3>Email</h3>
+                  </td>
                   <td>
                     <input type="email" id="email-pengguna" />
                   </td>
                 </tr>
                 <tr>
-                  <td><h3>Password</h3></td>
+                  <td>
+                    <h3>Password</h3>
+                  </td>
                   <td>
                     <input type="password" id="password-pengguna" />
                   </td>
                 </tr>
                 <tr>
-                  <td><h3>Gender</h3></td>
                   <td>
-                    <input type="radio" name="gender" id="male" value="Male" onchange="valueChanged()"/>
+                    <h3>Gender</h3>
+                  </td>
+                  <td>
+                    <input type="radio" name="gender" id="male" value="Male" onchange="valueChanged()" />
                     Male
-                    <input type="radio" name="genderF" id="female" value="Female" onchange="valueChanged()"/>
+                    <input type="radio" name="genderF" id="female" value="Female" onchange="valueChanged()" />
                     Female
                   </td>
                 </tr>
                 <tr>
-                  <td><h3>Address</h3></td>
+                  <td>
+                    <h3>Address</h3>
+                  </td>
                   <td>
                     <input type="text" id="alamat-pengguna" />
                   </td>
                 </tr>
                 <tr>
-                  <td><h3>City</h3></td>
+                  <td>
+                    <h3>City</h3>
+                  </td>
                   <td>
                     <input type="text" id="kota-pengguna" />
                   </td>
                 </tr>
                 <tr>
-                  <td><h3>Term of Service</h3></td>
+                  <td>
+                    <h3>Term of Service</h3>
+                  </td>
                   <td>
                     <input type="checkbox" id="tos" />
                   </td>
@@ -110,13 +125,13 @@
             </form>
           </div>
           <div class="errlbl">
-            <span  id="errorLabel" style="color: red;"></span>
+            <span id="errorLabel" style="color: red;"></span>
           </div>
         </div>
         <div class="logo2 circle"><img src="../Assets/Public-Assets/logo.png" alt="" /></div>
       </div>
       <div class="bot-items">
-        
+
         <input class="button" type="button" value="Sign Up" onclick="validateRegistration()">
       </div>
     </div>
