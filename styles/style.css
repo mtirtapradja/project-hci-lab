@@ -221,7 +221,7 @@ s {
 
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1500px) {
 
   #arrowleft2,#arrowright2{
     display: flex;
@@ -231,17 +231,45 @@ s {
     display: none;
   }
 
+  .middle-container-item div{
+    font-size: 0.9rem;
+  }
+
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
 
   #arrowleft3,#arrowright3{
     display: flex;
   }
 
+  #arrowleft2,#arrowright2{
+    display: none;
+  }
+
+  .middle-container-item div{
+    font-size: 0.8rem;
+  }
+
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
+
+  #arrowleft4,#arrowright4{
+    display: flex;
+  }
+
+  #arrowleft3,#arrowright3{
+    display: none;
+  }
+
+  .middle-container-item div{
+    font-size: 0.7rem;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
   
   /* buat gambar yang di hover */
   #burgermenu{
