@@ -119,8 +119,8 @@ li:hover {
 }
 
 .map-size img {
-  height: 100%;
-  width: 95%;
+  height: 30rem;
+  width: 30rem;
   outline-style: solid;
   outline-color: #61616b;
   margin-right: 50px;
