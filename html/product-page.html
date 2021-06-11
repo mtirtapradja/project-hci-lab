@@ -2,102 +2,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/product-page.css">
-    <script src="../scripts/productScript.js" ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/product-page.css">
     <title>Products</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../scripts/scriptForNavbar.js"></script>
+    <script src="../scripts/productScript.js"></script>
 </head>
 
-
 <body>
-    <div class="grid-container">
-        <div class="middle-container-item" onclick="movePage('Products/product-printer1.html')" >
-            <img src="../Assets/Index-Assets/printer1.png" alt="">
-            <div>
-                Epson L4150 Wi-Fi <br>
-                <s>Rp. 1.120.000,00 </s>
-                Rp. 560.000,00
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../Assets/Public-Assets/logo.png" alt="" />
+            </div>
+            <div class="navigation">
+                <img id="burgermenu" src="../Assets/Public-Assets/Hamburger_icon.svg.png" />
+                <ul>
+                    <li>
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="product-page.html"> Product </a>
+                    </li>
+                    <li>
+                        <a href="company-profile.html"> Company Profile </a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html"> Contact Us </a>
+                    </li>
+                    <li>
+                        <a href="register.html"> Registration </a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="middle-container-item" onclick="movePage('Products/product-puplen1.html')">
-            <img src="../Assets/Index-Assets/pulpen1.png" alt="">
-            <div>
-                Standard Tecnogel 12 pcs <br>
-                <s>Rp. 30.000,00</s>
-                Rp. 25.000,00
+    <section>
+        <div class="grid-container">
+            <div class="middle-container-item" onclick="movePage('Products/product-printer1.html')">
+                <img src="../Assets/Index-Assets/printer1.png" alt="" />
+                <div>
+                    Epson L4150 Wi-Fi <br />
+                    <s>Rp. 1.120.000,00 </s>
+                    Rp. 560.000,00
+                </div>
+            </div>
+
+            <div class="middle-container-item" onclick="movePage('Products/product-puplen1.html')">
+                <img src="../Assets/Index-Assets/pulpen1.png" alt="" />
+                <div>
+                    Standard Tecnogel 12 pcs <br />
+                    <s>Rp. 30.000,00</s>
+                    Rp. 25.000,00
+                </div>
+            </div>
+
+            <div class="middle-container-item" onclick="movePage('Products/product-scanner1.html')">
+                <img src="../Assets/Index-Assets/scanner1.png" alt="" />
+                <div>
+                    Hp ScanJet Pro 3500 f1 <br />
+                    <s>Rp. 2.499.000,00</s>
+                    Rp. 2.199.000,00
+                </div>
+            </div>
+
+            <div class="middle-container-item">
+                <img src="../Assets/Index-Assets/fotocopy1.png" alt="" />
+                <div>
+                    ImageRunner 2535W <br />
+                    <s>Rp. 5.499.000,00</s>
+                    Rp. 5.099.000,00
+                </div>
+            </div>
+
+            <div class="middle-container-item">
+                <img src="../Assets/Index-Assets/spidol.png" alt="" />
+                <div>
+                    Snowman BoardMarker All Color
+                    <s>Rp. 25.000,00 </s>
+                    Rp. 18.000,00
+                </div>
+            </div>
+
+            <div class="middle-container-item">
+                <img src="../Assets/Index-Assets/paper.jpg" alt="" />
+                <div>
+                    KIKY Paper 80 Grams
+                    <s>Rp. 50.000,00</s>
+                    Rp. 42.500,00
+                </div>
+            </div>
+
+            <div class="middle-container-item">
+                <img src="../Assets/Index-Assets/scanner3.png" alt="" />
+                <div>
+                    Epson Perfection V600
+                    <s>Rp. 5.499.000,00</s>
+                    Rp. 4.999.000,00
+                </div>
+            </div>
+
+            <div class="middle-container-item">
+                <img src="../Assets/Index-Assets/spidol2.png" alt="" />
+                <div>
+                    Permanent Marker
+                    <s>Rp. 59.000,00</s>
+                    Rp. 49.000,00
+                </div>
+            </div>
+
+            <div class="middle-container-item">
+                <img src="../Assets/Index-Assets/spidol2.png" alt="" />
+                <div>
+                    Permanent Marker
+                    <s>Rp. 59.000,00</s>
+                    Rp. 49.000,00
+                </div>
             </div>
         </div>
-
-        <div class="middle-container-item" onclick="movePage('Products/product-scanner1.html')">
-            <img src="../Assets/Index-Assets/scanner1.png" alt="">
-            <div>
-                Hp ScanJet Pro 3500 f1 <br>
-                <s>Rp. 2.499.000,00</s>
-                Rp. 2.199.000,00
-            </div>
-        </div>
-
-        <div class="middle-container-item">
-            <img src="../Assets/Index-Assets/fotocopy1.png" alt="">
-            <div>
-                ImageRunner 2535W <br>
-                <s>Rp. 5.499.000,00</s>
-                Rp. 5.099.000,00
-            </div>
-        </div>
-
-        <div class="middle-container-item">
-            <img src="../Assets/Index-Assets/spidol.png" alt="">
-            <div>
-                Snowman BoardMarker All Color
-                <s>Rp. 25.000,00 </s>
-                Rp. 18.000,00
-            </div>
-        </div>
-
-        <div class="middle-container-item">
-            <img src="../Assets/Index-Assets/paper.jpg" alt="">
-            <div>
-                KIKY Paper 80 Grams
-                <s>Rp. 50.000,00</s>
-                Rp. 42.500,00
-            </div>
-        </div>
-    
-        <div class="middle-container-item">
-            <img src="../Assets/Index-Assets/scanner3.png" alt="">
-            <div>
-                Epson Perfection V600
-                <s>Rp. 5.499.000,00</s>
-                Rp. 4.999.000,00
-            </div>
-        </div>
-
-        <div class="middle-container-item">
-            <img src="../Assets/Index-Assets/spidol2.png" alt="">
-            <div>
-                Permanent Marker
-                <s>Rp. 59.000,00</s>
-                Rp. 49.000,00
-            </div>
-        </div>
-
-        <div class="middle-container-item">
-            <img src="../Assets/Index-Assets/spidol2.png" alt="">
-            <div>
-                Permanent Marker
-                <s>Rp. 59.000,00</s>
-                Rp. 49.000,00
-            </div>
-        </div>
-
-    </div>
-
-
-    </div>
+    </section>
 </body>
 
 </html>
