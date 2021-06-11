@@ -229,7 +229,7 @@ s {
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1500px) {
   #arrowleft2,
   #arrowright2 {
     display: flex;
@@ -239,16 +239,21 @@ s {
   #arrowright1 {
     display: none;
   }
+
+  .middle-container-item{
+    height: 20em;
+  }
+
+  .middle-container-item div {
+    font-size: 0.9rem;
+  }
+
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width: 1500px) {
-=======
 @media only screen and (max-width: 1000px) {
   #burgermenu {
     display: block;
   }
->>>>>>> marcell-edit
 
   ul {
     align-items: center;
@@ -269,54 +274,17 @@ s {
     justify-content: center;
   }
 
-<<<<<<< HEAD
-  .middle-container-item div{
-    font-size: 0.9rem;
+  .middle-container-item{
+    height: 17em;
   }
 
-}
-
-@media only screen and (max-width: 1100px) {
-
-  #arrowleft3,#arrowright3{
-    display: flex;
-  }
-
-  #arrowleft2,#arrowright2{
-    display: none;
-  }
-
-  .middle-container-item div{
-    font-size: 0.8rem;
-  }
-
-}
-
-@media only screen and (max-width: 800px) {
-
-  #arrowleft4,#arrowright4{
-    display: flex;
-  }
-
-  #arrowleft3,#arrowright3{
-    display: none;
-  }
-
-  .middle-container-item div{
-    font-size: 0.7rem;
-  }
-
-}
-
-@media only screen and (max-width: 800px) {
-  
-=======
   li {
     height: 5em;
     margin-top: 1em;
     justify-content: center;
     width: 60%;
   }
+
   @media (hover: hover) {
     li:hover {
       background: #33ffd3;
@@ -330,43 +298,45 @@ s {
       transition: all 0.1s ease-in;
     }
   }
-}
 
-@media only screen and (max-width: 900px) {
   #arrowleft3,
   #arrowright3 {
     display: flex;
   }
-}
 
-@media only screen and (max-width: 400px) {
->>>>>>> marcell-edit
-  /* buat gambar yang di hover */
-  #burgermenu {
-    display: flex;
+  #arrowleft2,
+  #arrowright2 {
+    display: none;
   }
 
+  .middle-container-item div {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   #arrowleft4,
   #arrowright4 {
     display: flex;
   }
 
-  /* buat menunya jadi kebawah */
-  .nav-menu {
+  #arrowleft3,
+  #arrowright3 {
     display: none;
-    position: absolute;
-    background-color: #61616b;
-    grid-template-columns: none;
-    grid-template-rows: repeat(5, auto);
   }
 
-  /* kalau di hover gambarnya ubah displaynya */
-  .navigation:hover .nav-menu {
-    display: grid;
+  .middle-container-item div {
+    font-size: 0.7rem;
   }
 
-  /* jadiin positinya relative */
-  .nav-item {
-    position: relative;
+  .middle-container-item{
+    height: 13em;
+  }
+
+  li {
+    height: 5em;
+    margin-top: 1em;
+    justify-content: center;
+    width: 60%;
   }
 }

@@ -1,12 +1,24 @@
 $(document).ready(function(){
   let fields = $('.middle-container-item');
   let media3 = window.matchMedia('(max-width: 1500px)');
-  let media2 = window.matchMedia('(max-width: 1100px)');
+  let media2 = window.matchMedia('(max-width: 1000px)');
   let media1 = window.matchMedia('(max-width: 800px)');
 
   let currentIndex = 0;
   let targetIndex = 4;
+
+  let width = $(window).width();
   
+  if(width<800){
+    targetIndex = 1;
+  }else
+  if(width<1000){
+    targetIndex = 2;
+  }else
+  if(width<1500){
+    targetIndex = 3;
+  }
+
   for(i=targetIndex ; i<fields.length ; i++){
     fields.eq(i).hide();
   }
