@@ -229,7 +229,7 @@ s {
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1500px) {
   #arrowleft2,
   #arrowright2 {
     display: flex;
@@ -241,14 +241,10 @@ s {
   }
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width: 1500px) {
-=======
 @media only screen and (max-width: 1000px) {
   #burgermenu {
     display: block;
   }
->>>>>>> marcell-edit
 
   ul {
     align-items: center;
@@ -269,23 +265,18 @@ s {
     justify-content: center;
   }
 
-<<<<<<< HEAD
   .middle-container-item div{
     font-size: 0.9rem;
   }
-
-}
-
-@media only screen and (max-width: 1100px) {
-
+  
   #arrowleft3,#arrowright3{
     display: flex;
   }
-
+  
   #arrowleft2,#arrowright2{
     display: none;
   }
-
+  
   .middle-container-item div{
     font-size: 0.8rem;
   }
@@ -306,11 +297,6 @@ s {
     font-size: 0.7rem;
   }
 
-}
-
-@media only screen and (max-width: 800px) {
-  
-=======
   li {
     height: 5em;
     margin-top: 1em;
@@ -329,44 +315,5 @@ s {
       font-weight: bold;
       transition: all 0.1s ease-in;
     }
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  #arrowleft3,
-  #arrowright3 {
-    display: flex;
-  }
-}
-
-@media only screen and (max-width: 400px) {
->>>>>>> marcell-edit
-  /* buat gambar yang di hover */
-  #burgermenu {
-    display: flex;
-  }
-
-  #arrowleft4,
-  #arrowright4 {
-    display: flex;
-  }
-
-  /* buat menunya jadi kebawah */
-  .nav-menu {
-    display: none;
-    position: absolute;
-    background-color: #61616b;
-    grid-template-columns: none;
-    grid-template-rows: repeat(5, auto);
-  }
-
-  /* kalau di hover gambarnya ubah displaynya */
-  .navigation:hover .nav-menu {
-    display: grid;
-  }
-
-  /* jadiin positinya relative */
-  .nav-item {
-    position: relative;
   }
 }

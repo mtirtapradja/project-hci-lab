@@ -1,7 +1,7 @@
 $(document).ready(function(){
   let fields = $('.middle-container-item');
   let media3 = window.matchMedia('(max-width: 1500px)');
-  let media2 = window.matchMedia('(max-width: 1100px)');
+  let media2 = window.matchMedia('(max-width: 1000px)');
   let media1 = window.matchMedia('(max-width: 800px)');
 
   let currentIndex = 0;
