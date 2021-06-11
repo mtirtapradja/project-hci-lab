@@ -239,6 +239,15 @@ s {
   #arrowright1 {
     display: none;
   }
+
+  .middle-container-item{
+    height: 20em;
+  }
+
+  .middle-container-item div {
+    font-size: 0.9rem;
+  }
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -265,8 +274,8 @@ s {
     justify-content: center;
   }
 
-  .middle-container-item div {
-    font-size: 0.9rem;
+  .middle-container-item{
+    height: 17em;
   }
 
   li {
@@ -318,6 +327,10 @@ s {
 
   .middle-container-item div {
     font-size: 0.7rem;
+  }
+
+  .middle-container-item{
+    height: 13em;
   }
 
   li {
