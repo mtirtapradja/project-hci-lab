@@ -113,32 +113,6 @@ li:hover {
   width: auto;
 }
 
-.company-profile {
-  align-items: center;
-  margin: 3% auto;
-  width: 70%;
-}
-
-.company-profile h3 {
-  padding-bottom: 2%;
-  padding-top: 10%;
-}
-
-.company-profile h2 {
-  color: rgb(121, 121, 121);
-  padding-bottom: 5%;
-  padding-top: 2%;
-}
-
-.circle {
-  align-items: center;
-  background-color: #000000;
-  border-radius: 180px;
-  height: 15em;
-  justify-content: center;
-  width: 15em;
-}
-
 .middle-container-witharrow {
   align-items: center;
   display: flex;
