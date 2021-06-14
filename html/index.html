@@ -66,8 +66,18 @@
                     <img ID="arrowleft4" src="../Assets/Public-Assets/arrow-left.png" alt="">
                 </div>
                 <div class="inner-container">
+                    <div class="pop-up-box">
+                        <div class="content">
+                            <iframe id="play-video" src="https://www.youtube.com/embed/UFblpphlDzM"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                                gyroscope; picture-in-picture" allowfullscreen>
+                            </iframe>
+                            <button id="btn">Go to Details</button>
+                        </div>
+                    </div>
                     <div class="middle-container-items">
-                        <div class="middle-container-item" onclick="movePage('Products/product-printer1.html')" onmouseover="changeVideo('https://www.youtube.com/embed/UFblpphlDzM')"  >
+                        <div class="middle-container-item"
+                            onclick="changeVideo('Products/product-printer1.html', 'https://www.youtube.com/embed/UFblpphlDzM')">
                             <img src="../Assets/Index-Assets/printer1.png" alt="">
                             <div>
                                 Epson L4150 Wi-Fi <br>
@@ -83,7 +93,8 @@
                                 Rp. 25.000,00
                             </div>
                         </div>
-                        <div class="middle-container-item" onclick="movePage('Products/product-scanner1.html')" onmouseover="changeVideo('https://www.youtube.com/embed/t-uJL1lOy9k')">
+                        <div class="middle-container-item" onclick="movePage('Products/product-scanner1.html')"
+                            onmousedown="changeVideo('https://www.youtube.com/embed/t-uJL1lOy9k')">
                             <img src="../Assets/Index-Assets/scanner1.png" alt="">
                             <div>
                                 Hp ScanJet Pro 3500 f1 <br>
@@ -91,7 +102,8 @@
                                 Rp. 2.199.000,00
                             </div>
                         </div>
-                        <div class="middle-container-item" onmouseover="changeVideo('https://www.youtube.com/embed/CZ_JrFsX0ew')">
+                        <div class="middle-container-item"
+                            ondblclick="changeVideo('https://www.youtube.com/embed/CZ_JrFsX0ew')">
                             <img src="../Assets/Index-Assets/fotocopy1.png" alt="">
                             <div>
                                 ImageRunner 2535W <br>
@@ -146,9 +158,12 @@
         <div class="middle-container">
             <h3>Video</h3>
             <div class="video-containter">
-                <iframe id="play-video" src="https://www.youtube.com/embed/UFblpphlDzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                
-                </iframe>
+                <!-- <iframe id="play-video" src="https://www.youtube.com/embed/UFblpphlDzM" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+
+                </iframe> -->
             </div>
         </div>
     </section>
