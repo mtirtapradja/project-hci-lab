@@ -1,8 +1,8 @@
 var nameText;
 var emailText;
 var passwordText;
-var genderText;
-var genderTextF;
+var genderM;
+var genderF;
 var addressText;
 var cityText;
 var tosText;
@@ -14,9 +14,10 @@ function validateRegistration() {
   console.log(emailText);
   passwordText = document.getElementById("password-pengguna").value;
   console.log(passwordText);
-  genderText = document.querySelector('input[name="gender"]');
-  genderTextF = document.querySelector('input[name="genderF"]');
-  console.log(genderText);
+  genderM = document.getElementById("male");
+  console.log(genderM);
+  genderF = document.getElementById("female");
+  console.log(genderF);
   addressText = document.getElementById("alamat-pengguna").value;
   console.log(addressText);
   cityText = document.getElementById("kota-pengguna").value;
@@ -40,7 +41,7 @@ function validateRegistration() {
   } else if (passwordText == "") {
     errorLabel.innerHTML = "Please Insert Your Password!";
     // alert("Please Insert Your Password!");
-  } else if (!genderText.checked && !genderTextF.checked) {
+  } else if (!genderM.checked && !genderF.checked) {
     errorLabel.innerHTML = "Please Choose Your Gender!";
     // alert("Please Choose Your Gender!");
   } else if (addressText == "") {
@@ -84,36 +85,15 @@ function validateEmail(textEmail){
   return true;
 }
 
-// function validateEmail(textEmail) {
-//   if (textEmail.indexOf("@") <= 0 || textEmail.indexOf("@") <= textEmail.length - 1) {
-//     return false;
-//   }
-
-//   if (textEmail.indexOf(".") <= 0 || textEmail.indexOf("@") <= textEmail.length - 1) {
-//     return false;
-//   }
-
-//   var jmlAt = 0;
-//   for (i = 0; i < textEmail.length; i++){
-//     if (textEmail[i] == "@"){
-//       jml++;
-//     }
-//   }
-
-//   if (jmlAt > 1) {
-//     return false;
-//   }
-
-//   return true;
-// }
-
 function valueChanged(){
-  if(document.getElementById("male").checked == true)
+  male = document.getElementById("male");
+  female = document.getElementById("female");
+  if(male.checked == true)
   {
-      document.getElementById("female").checked = false;
+    female.checked = false;
   }
   else
   {
-      document.getElementById("male").checked = false;
+    male.checked = false;
   }
 }
