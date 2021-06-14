@@ -427,24 +427,21 @@ $(document).ready(function () {
   });
 });
 
-function movePage(path) {
-  window.location.href = path;
-}
-
-function changeVideo(pageURL, path) {
+function changeVideo(path, pageUrl) {
   document.getElementById("play-video").src = path;
-  // Get the modal
   var modal = document.getElementsByClassName("pop-up-box")[0];
 
   modal.style.display = "block";
 
-  // When the user clicks anywhere outside of the modal, close it
+  var button = document.getElementById("btn");
+
+  button.onclick = function () {
+    window.location.href = pageUrl;
+  };
+
   window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   };
 }
-
-fields.addEventListener("click", changeVideo(path), false);
-fields.addEventListener("dblclick", startDblClick(pageURL), false); // function needs some small changes, tho
