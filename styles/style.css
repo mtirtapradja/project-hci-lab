@@ -91,7 +91,7 @@ li:hover {
   flex-direction: column;
   height: auto;
   margin: 5%;
-  padding: 1%;
+  padding: 3%;
   width: auto;
 }
 
@@ -143,12 +143,6 @@ li:hover {
   width: 20%;
 }
 
-.activee {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .middle-container-item div {
   display: flex;
   flex-direction: column;
@@ -196,6 +190,16 @@ s {
   font-size: 1.3em;
   font-weight: bold;
   text-align: center;
+}
+
+.video-containter{
+ display: flex;
+ justify-content: center;
+}
+
+#play-video{
+  height: 500px;
+  width: 1000px;
 }
 
 footer {

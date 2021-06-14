@@ -329,3 +329,7 @@ $(document).ready(function(){
 function movePage(path){
   window.location.href = path;
 }
+
+function changeVideo(path){
+  document.getElementById('play-video').src = path;
+}
