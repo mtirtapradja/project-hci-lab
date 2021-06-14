@@ -141,6 +141,18 @@ li:hover {
   padding-top: 10px;
 }
 
+.map-size{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.click-here{
+  font-weight: bold;
+  color: #61616b;
+  opacity: 50%;
+}
+
 .map-size img {
   height: 31rem;
   width: 31rem;
