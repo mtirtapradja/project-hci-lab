@@ -173,6 +173,7 @@ nav li:hover {
   justify-content: center;
 }
 
+
 .small-picture .image {
   display: none;
   cursor: pointer;
@@ -184,6 +185,8 @@ nav li:hover {
 .small-picture .active {
   display: flex;
 }
+
+
 
 #arrowleft {
   cursor: pointer;
