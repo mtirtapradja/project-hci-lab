@@ -4,17 +4,7 @@ $(document).ready(function () {
       $(this).attr("src", url).fadeIn(1000);
     });
   });
-});
 
-function setImage(path) {
-  url = path;
-}
-
-function movePage(path){
-  window.location.href = path;
-}
-
-$(document).ready(function () {
   $("#arrowleft").on("click", function () {
     console.log("Click Left");
     var currentDiv = $(".image.active");
@@ -25,9 +15,7 @@ $(document).ready(function () {
       prevDiv.addClass("active").css("z-index", 10);
     }
   });
-});
 
-$(document).ready(function () {
   $("#arrowright").on("click", function () {
     console.log("Click Right");
     var currentDiv = $(".image.active");
@@ -39,3 +27,11 @@ $(document).ready(function () {
     }
   });
 });
+
+function setUrl(path) {
+  url = path;
+}
+
+function movePage(path){
+  window.location.href = path;
+}
