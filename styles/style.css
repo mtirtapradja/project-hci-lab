@@ -196,8 +196,8 @@ s {
 }
 
 #play-video {
-  height: 500px;
-  width: 1000px;
+  height: 30em;
+  width: 70%;
 }
 
 #banner{
@@ -410,6 +410,11 @@ footer {
   #arrowright1 {
     display: flex;
   }
+
+  #play-video {
+    height: 23em;
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 1500px) {
@@ -493,6 +498,11 @@ footer {
 
   .middle-container-item div {
     font-size: 0.8rem;
+  }
+
+  #play-video {
+    height: 20em;
+    width: 70%;
   }
 }
 
