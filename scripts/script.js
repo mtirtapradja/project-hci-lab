@@ -425,6 +425,23 @@ $(document).ready(function () {
       );
     }
   });
+
+  var index = 0;
+  carousel();
+
+  function carousel() {
+    var idx;
+    var img = document.getElementsByClassName("ads");
+    for (idx = 0; idx < img.length; idx++) {
+      img[idx].style.display = "none";
+    }
+    index++;
+    if (index > img.length) {
+      index = 1;
+    }
+    img[index - 1].style.display = "block";
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+  }
 });
 
 function changeVideo(path, pageUrl) {

@@ -200,12 +200,13 @@ s {
   width: 70%;
 }
 
-#banner{
+#banner {
   display: flex;
   justify-content: center;
 }
 
-#banner .image{
+#banner img {
+  display: none;
   max-width: 100%;
 }
 
