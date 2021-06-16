@@ -125,6 +125,20 @@ li:hover {
   flex-direction: column;
 }
 
+.ads-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 20em;
+  justify-content: center;
+  margin: 5em auto 2em auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  width: 100%;
+}
+
 .middle-container-item {
   background-color: #c4c4c4c4;
   border: 2px #6e91a2 solid;
