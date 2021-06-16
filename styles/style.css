@@ -200,6 +200,15 @@ s {
   width: 1000px;
 }
 
+#banner{
+  display: flex;
+  justify-content: center;
+}
+
+#banner .image{
+  max-width: 100%;
+}
+
 footer {
   margin-top: 5em;
 }
