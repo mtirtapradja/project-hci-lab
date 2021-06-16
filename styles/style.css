@@ -386,13 +386,14 @@ footer {
 
 .content {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
 }
 
 @media only screen and (max-width: 2000px) {
