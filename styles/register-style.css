@@ -91,27 +91,29 @@ li:hover {
 }
 
 .button {
-  width: 25rem;
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #33ffd3;
-  border: none;
+  background: #242424;
+  border: 2px #ffff solid;
   border-radius: 15px;
-  box-shadow: 0 3px #999;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  outline: none;
+  padding: 15px 25px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  width: 25rem;
 }
 
 .button:hover {
-  background-color: #2e9982;
+  border-color: #33ffd3;
+  color: #33ffd3;
 }
 
 .button:active {
-  background-color: #2e9982;
-  box-shadow: 0 10px #666;
-  transform: translateY(4px);
+  background-color: #33ffd3;
+  color: #242424;
 }
 
 .circle {
