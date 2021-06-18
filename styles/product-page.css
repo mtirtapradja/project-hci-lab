@@ -108,6 +108,7 @@ li:hover {
   flex-direction: column;
   justify-content: center;
   min-height: 23em;
+  padding-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 1em;
