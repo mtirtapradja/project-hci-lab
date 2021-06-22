@@ -141,13 +141,13 @@ li:hover {
   padding-top: 10px;
 }
 
-.map-size{
+.map-size {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.click-here{
+.click-here {
   font-weight: bold;
   color: #61616b;
   opacity: 50%;
@@ -240,6 +240,7 @@ li:hover {
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+    z-index: 2;
   }
 
   ul li a {
